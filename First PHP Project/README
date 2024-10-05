@@ -30,6 +30,3 @@ web.php
 Example Currency layer response:
 currency-layer-response.json
 
-Example Currency layer error response:
-currency-layer-response-error.json
-
