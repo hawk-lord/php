@@ -1,8 +1,36 @@
-Using PHP 8.3.12
+Installation
+
+Install PHP 8.3.12
+
+Create php.ini in the main php directory from existing php.ini-development
+Enable following extensions (remove leading semicolon):
+curl
+fileinfo
+gd
+mbstring
+mysqli
+openssl
+zip
+
+Install PhpSpreadsheet to handle the downloaded Excel spreadsheet.
+To install, type: composer require phpoffice/phpspreadsheet
+
+
+
+Install MySQL
+
+Run the commands in ddl.sql
+
+
+
+Create an API key at https://currencylayer.com/
+
+
+
 
 To run the command line script:
 php cli.php currency-layer-api-key=(key)
-php cli.php currency-layer-api-ke=e5adcce0a8be7b2cd79a13f7bbf78a1b
+
 
 To run the web script:
 Start PHP with: 
@@ -12,6 +40,7 @@ http://localhost:8000/
 
 
 
+Included Files:
 Command line script:
 cli.php
 
