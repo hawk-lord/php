@@ -1,0 +1,35 @@
+Using PHP 8.3.12
+
+To run the command line script:
+php cli.php currency-layer-api-key=(key)
+php cli.php currency-layer-api-ke=e5adcce0a8be7b2cd79a13f7bbf78a1b
+
+To run the web script:
+Start PHP with: 
+php -S localhost:8000
+Go to URL:
+http://localhost:8000/
+
+
+
+Command line script:
+cli.php
+
+Database defintion:
+ddl.sql
+
+Web page:
+index.html
+
+Web JavaScript:
+webscript.js
+
+Web PHP script:
+web.php
+
+Example Currency layer response:
+currency-layer-response.json
+
+Example Currency layer error response:
+currency-layer-response-error.json
+
