@@ -76,7 +76,6 @@ $mysqli = new mysqli($host, $user, $password, $dbname, $port, $socket)
 or die ('Could not connect to the database server' . mysqli_connect_error());
 
 // Use a prepared statement to avoid SQL injection possibility
-//$stmt = $mysqli->prepare("REPLACE INTO test1.alko(number, name, bottlesize, price, priceGBP) VALUES (?, ?, ?, ?, ?)");
 $sql_insert = "INSERT INTO test1.alko(number, name, bottlesize, price, priceGBP) VALUES (?, ?, ?, ?, ?) "
 . "ON DUPLICATE KEY UPDATE price=?, priceGBP=?";
 $stmt = $mysqli->prepare($sql_insert);
